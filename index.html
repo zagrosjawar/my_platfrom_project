@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>My Platform</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="../CSS/info100Styles.css" />
+	
+	</head>
+	<body>
+        <div id="note-section">
+            <div class="note">
+              <span class="close" onclick="closeNote()">&times;</span>
+              <p> - Students of University of Bergen and Western Norway University of Applied Science
+				ECTS credits if the course fits into their study program.<br> - External participants can take the course for a fee.</p>
+            </div>
+        </div>
+        
+		  <!-- header -->
+	    <header class="main-header">
+			<div class="logo-name">
+				<a href="index.html" title="Home" rel="home" >
+				<img class="logo-image" src="../Assets/logo.png" alt="uib and hvl logo">
+				</a>
+
+				<div class="website-name">
+					<a href="index.html"><span>My Platform</span></a>
+				</div>
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+			<div class="actions">
+				<button class="sign-in">Sign In</button>
+				<button class="sign-up">Sign Up</button>
+			</div>
+		</header>
+
+		<!-- main -->
+		<!-- search -->
+		<!-- filter -->
+		<!-- results -->
+		<main>
+			<div class="search">
+				<form class="search-form"  action="#" method="get" accept-charset="utf-8"  id="search-filter-form" >
+                    <label for="course-search">Find Courses</label>
+                    <div class="search-bar">
+                        <input type="search" id="course-search" name="query" placeholder="Search courses ... ">
+                        <button type="submit"><img class="search-icon" src="../Assets/search-icon.png" alt="magnifier icon to search queries"></button>
+                    </div>
+                </form>
+			</div>
+
+			<div class="filter">
+				<div class="study-field">
+					<select name="studyField" form="search-filter-form">
+							<option value="all">Study Field</option>
+							<option value="ITAndMedia">IT and media</option>
+							<option value="tecknologyAndEnginerring">Teknology and engineering</option>
+							<option value="healthAndPsychology">Health and psychology</option>
+							<option value="socialAndHumanitic">Social and humanistic</option>
+							<option value="economyAndBusiness">Economy and business</option>
+							<option value="lawAndPolitics">Law and politics</option>
+							<option value="educationAndPedagog">Education and pedagogy</option>
+						</select>
+				</div>
+				<div class="study-level">
+					<select name="studyLevel" form="search-filter-form">
+						<option value="all">Study Level</option>
+						<option value="beginner">Bachelor</option>
+						<option value="intermediate">Master</option>
+						<option value="advanced">PHD</option>
+					</select>
+				</div>
+				<div class="study-program">
+					<select name="type" form="search-filter-form">
+						<option value="all">Study Program</option>
+						<option value="informationScience">Information Science</option>
+						<option value="mediaAndInteractionDesign">Media- and interaction design</option>
+						<option value="ai">Artificial intelligence</option>
+						<option value="CS">Computer science</option>
+						<option value="softwareEngineering">Software engineering</option>
+						<option value="dataScience">Data science</option>
+					</select>
+				</div>
+				<div class="level-difficulty" >
+					<select name="levelDifficulty" form="search-filter-form">
+						<option value="all">Level of difficulty</option>
+						<option value="beginner">Beginner</option>
+						<option value="intermediate">Intermediate</option>
+						<option value="advance">Advanced</option>
+					</select>
+				</div>
+
+				<div class="teaching-language">
+					<select name="teachingLanguage" form="search-filter-form">
+						<option value="all">Teaching Language</option>
+						<option value="norwegian">Norwegian</option>
+						<option value="english">English</option>
+					</select>
+				</div>
+
+				<div class="attendence">
+					<select name="attendence" form="search-filter-form">
+						<option value="all">Attendence</option>
+						<option value="onCampus">On campus</option>
+						<option value="online">Online</option>
+					</select>
+				</div>
+				<div class="rating">
+					<h3>Rating</h3>
+					<div>
+						<div>
+							<input type="radio" id="star5" name="rating" value="5" form="search-filter-form">
+							<label for="star5"><img class="stars-five" src="../Assets/five-stars.png" alt="5 stars"></label>
+						</div>
+						<div>
+							
+						</div>
+							
+
+							<input type="radio" id="star4" name="rating" value="4" form="search-filter-form">
+							<label for="star4"><img class="stars-four" src="../Assets/four-stars.png" alt="4 stars"></label>
+					</div>
+					<div>
+						<div>
+							<input type="radio" id="star3" name="rating" value="3" form="search-filter-form">
+							<label for="star3"><img class="stars-three" src="../Assets/three-stars.png" alt="3 stars"></label>
+						</div>
+							
+						<div>
+							<input type="radio" id="star2" name="rating" value="2" form="search-filter-form">
+							<label for="star2"><img class="stars-tow" src="../Assets/two-stars.png" alt="2 stars"></label>
+						</div>
+							
+					</div>
+				</div>
+
+				
+
+				<div class="button" form="search-filter-form">
+					<button id="clearFilter">Clear Filters</button>
+				</div>
+
+				<div class="checkboxes">
+					<input type="checkbox" id="checkbox1" name="student" value="studenUibHvl" form="search-filter-form">
+					<label for="checkbox1">Student (Uib &amp; Hvl)</label>
+					<br>
+					<input type="checkbox" id="checkbox2" name="externalParticipant" value="ExternalParticipant" form="search-filter-form">
+					<label for="checkbox2">External Participant</label>
+				</div>
+			</div>
+
+			<div class="results"> 
+				<h2>Results:</h2>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO Introduction to Information Science
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							EXPHIL-SVSEM Examen Philosophicum
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO132 Introduction to Programming with Python
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO162 Introduction to Human computer interaction HCI
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO104 Formal Methods in Information Science
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO135 Advance Programming
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO125 Data Managment and Databases
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO180 Methoeds in Artifacial Intelligence
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO207 Social Network theory
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO212 System Development
+						</a>
+					</article>
+					<article>
+						<a class="preview__link" href="info100.html" title="Introduction to information science" target="_blank">
+							INFO215 Web Science
+						</a>
+					</article>
+					<article>
+						<ul class="pagination">
+							<li><a  href="#" title="go to page" target="_blank"><u>1</u></a></li>
+							<li><a  href="#" title="go to page" target="_blank">2</a></li>
+							<li><a  href="#" title="go to page" target="_blank">3</a></li>
+							<li><a  href="#" title="go to page" target="_blank">4</a></li>
+							<li disabled><span >...</span></li>
+							<li><a  href="#" title="go to page" target="_blank">Next</a></li>
+						</ul>
+					</article>
+
+
+			</div>
+		</main>
+
+<!-- footer -->
+		<footer>
+				<p>&copy; 2024 My Platform</p>
+		</footer>
+
+        <script src="../JS/scripts.js"></script>
+	</body>
+</html>
+
+
+
